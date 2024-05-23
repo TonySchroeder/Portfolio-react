@@ -1,0 +1,10 @@
+.rtl .main_menu_2 ul li a span {
+  margin-left: 17px;
+  margin-right: 0;
+}
+.rtl .tf__about_2 .tf__section_heading h5,
+.rtl .tf__about_2 .tf__section_heading h2,
+.rtl .tf__portfolio h5,
+.rtl .tf__portfolio h2 {
+  text-align: right;
+}
