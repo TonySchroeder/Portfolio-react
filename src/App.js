@@ -16,13 +16,13 @@ const App = () => {
   return (
     <>
       <AnimatedCursor
-        innerSize={8}
+        innerSize={25}
         outerSize={44}
-        color="255, 160, 1"
+        color="82, 33, 230"
         outerAlpha={0.3}
         innerScale={0.7}
         outerScale={1.2}
-      />
+      ><img src="/TSlogo.png" style={{ height: '25px' }} /></AnimatedCursor>
       <ScrollToTop />
       <AllRoutes />
       <ToastContainer />

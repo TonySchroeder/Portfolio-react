@@ -12,11 +12,11 @@ const heroContent = {
   heroImageLight: heroImgLight,
   heroMobileImageDark: heroImgDarkMobile,
   heroMobileImageLight: heroImgLightMobile,
-  heroTitleName: "viktor grünwald",
-  heroDesignation: "software entwickler",
+  heroTitleName: "Tony",
+  heroDesignation: "Software Developer",
   heroDescriptions:
-    "Ich bin ein deutsch- und englischsprachiger Software-Entwickler mit Fokus auf benutzerfreundliches Webdesign. Meine Leidenschaft ist es, modernste Technologien durch intuitive Benutzeroberflächen für alle zugänglich zu machen und sie in ihrer Arbeit oder ihrem Alltag zu bereichern",
-  heroBtn: "mehr über mich",
+    "I am a passionate front-end developer with experience in developing modern and responsive web applications. With in-depth knowledge of HTML, CSS and TypeScript as well as frameworks like Next.js and React, I create user-friendly and powerful interfaces. My attention to detail and commitment to clean, maintainable code drives me to develop innovative solutions and to continuously learn. Let's make the really cool stuff happen!",
+  aboutMeBtn: "More about me",
 };
 
 const Hero = ({ isDark }) => {
@@ -47,13 +47,14 @@ const Hero = ({ isDark }) => {
               <span>{heroContent.heroDesignation}</span>
             </h1>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
-            <button className="button" onClick={toggleModalOne}>
-              <span className="button-text">{heroContent.heroBtn}</span>
+            <button className="button" onClick={toggleModalOne} >
+              <span className="button-text">{heroContent.aboutMeBtn}</span>
               <span className="button-icon fa fa-arrow-right"></span>
             </button>
+
           </div>
         </div>
-      </div>
+      </div >
 
       <Modal
         isOpen={isOpen}
@@ -72,9 +73,9 @@ const Hero = ({ isDark }) => {
             <div data-aos="fade-up" data-aos-duration="1200">
               <div className="title-section text-left text-sm-center">
                 <h1>
-                  ÜBER <span>MICH</span>
+                  About <span>me</span>
                 </h1>
-                <span className="title-bg">Lebenslauf</span>
+                <span className="title-bg">Résumé</span>
               </div>
               <Index />
             </div>

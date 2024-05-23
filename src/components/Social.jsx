@@ -3,11 +3,11 @@ import React from "react";
 const SocialShare = [
   {
     iconName: "fa fa-xing",
-    link: "https://www.xing.com/profile/Viktor_Gruenwald022125/web_profiles",
+    link: "https://www.xing.com/profile/Tony_Schroeder10/web_profiles",
   },
   {
     iconName: "fa fa-linkedin",
-    link: "https://www.linkedin.com/in/viktor-gr%C3%BCnwald-76b5b7249/",
+    link: "https://www.linkedin.com/in/tony-schroeder-0804b3249/",
   },
   {
     iconName: "fa fa-briefcase",

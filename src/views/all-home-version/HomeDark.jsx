@@ -9,9 +9,9 @@ import SwitchDark from "../../components/switch/SwitchDark";
 
 const menuItem = [
   { icon: "fa-home", menuName: "Start" },
-  { icon: "fa-user", menuName: "Ich" },
+  { icon: "fa-user", menuName: "About me" },
   { icon: "fa-briefcase", menuName: "Portfolio" },
-  { icon: "fa-envelope-open", menuName: "Kontakt" },
+  { icon: "fa-envelope-open", menuName: "Contact" },
 ];
 
 const HomeDark = () => {
@@ -28,7 +28,7 @@ const HomeDark = () => {
             {menuItem.map((item, i) => (
               <Tab className="icon-box" key={i}>
                 <i className={`fa ${item.icon}`}></i>
-                <h2>{item.menuName}</h2>
+                <h2 style={{ whiteSpace: 'nowrap' }}>{item.menuName}</h2>
               </Tab>
             ))}
           </TabList>
@@ -50,9 +50,9 @@ const HomeDark = () => {
             <div data-aos="fade-up" data-aos-duration="1200">
               <div className="title-section text-left text-sm-center">
                 <h1>
-                  ÜBER <span>MICH</span>
+                  About <span>me</span>
                 </h1>
-                <span className="title-bg">Lebenslauf</span>
+                <span className="title-bg">Résumé</span>
               </div>
 
               <Index />
@@ -66,9 +66,9 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <h1>
-                Mein <span>Portfolio</span>
+                My <span>portfolio</span>
               </h1>
-              <span className="title-bg">Projekte</span>
+              <span className="title-bg">Projects</span>
             </div>
 
             <Portfolio />
@@ -81,9 +81,9 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <h1>
-                Kontakt <span>aufnehmen</span>
+                Get in <span>contact</span>
               </h1>
-              <span className="title-bg">Kontakt</span>
+              <span className="title-bg">Contact</span>
             </div>
             <div
               className="container"
@@ -93,19 +93,17 @@ const HomeDark = () => {
               <div className="row justify-content-center">
                 <div className="col-12 text-center">
                   <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
-                    Schreiben Sie mir!
+                    Write to me!
                   </h3>
                   <p className="open-sans-font mb-5">
-                    Kontaktieren Sie mich gerne. Ich bin immer offen für
-                    interessante neue Projekte oder Möglichkeiten zur
-                    Digitalisierung Ihrer Ideen.
+                    I look forward to hearing from you! Whether you have any questions, would like to discuss a collaboration or just want to say hello, please don't hesitate to contact me. You can reach me using the information below. I will get back to you as soon as possible.
                   </p>
                   <div className="mb-5">
                     <a
-                      href="mailto:mail@viktor-gruenwald.de"
+                      href="mailto:tony.schroeder@gmx.de"
                       className="button"
                     >
-                      <span className="button-text">Email senden</span>
+                      <span className="button-text">Send email</span>
                       <span className="button-icon fa fa-send"></span>
                     </a>
                   </div>
@@ -125,7 +123,6 @@ const HomeDark = () => {
               </div>
             </div>
           </TabPanel>
-
           {/* <TabPanel className="blog">
             <div
               className="title-section text-left text-sm-center "

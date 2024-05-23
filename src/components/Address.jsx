@@ -5,19 +5,19 @@ const Address = () => {
     <div className="d-flex" style={{ gap: 50, flexWrap: "wrap" }}>
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-map position-absolute"></i>
-        <span className="d-block">Adresse</span>Meschede, Deutschland
+        <span className="d-block">Address:</span>Horneburg, Deutschland
       </p>
 
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-envelope-open position-absolute"></i>
-        <span className="d-block">mail</span>{" "}
-        <a href="mailto:steve@mail.com">mail@viktor-gruenwald.de</a>
+        <span className="d-block">Email:</span>{" "}
+        <a href="mailto:steve@mail.com">tony.schroeder@gmx.de</a>
       </p>
 
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-phone-square position-absolute"></i>
-        <span className="d-block">Tel:</span>{" "}
-        <a href="Tel: +49171 9796 775">+49 171 9796 775</a>
+        <span className="d-block">Phone:</span>{" "}
+        <a href="Tel: +49171 9796 775">+49 173 6471 810</a>
       </p>
     </div>
   );
