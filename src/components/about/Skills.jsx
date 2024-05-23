@@ -1,0 +1,35 @@
+import React from "react";
+
+const skillsContent = [
+  { skillClass: "p75", skillPercent: "75", skillName: "JAVASCRIPT" },
+  { skillClass: "p80", skillPercent: "80", skillName: "REACT" },
+  { skillClass: "p80", skillPercent: "80", skillName: "NEXTJS" },
+  { skillClass: "p65", skillPercent: "65", skillName: "ANGULAR" },
+  { skillClass: "p80", skillPercent: "80", skillName: "RESTAPI" },
+  { skillClass: "p70", skillPercent: "70", skillName: "TYPESCRIPT" },
+  { skillClass: "p95", skillPercent: "95", skillName: "KOMMUNIKATION" },
+  { skillClass: "p70", skillPercent: "70", skillName: "MYSQL" },
+];
+
+const Skills = () => {
+  return (
+    <>
+      {skillsContent.map((val, i) => (
+        <div className="col-6 col-md-3 mb-3 mb-sm-5" key={i}>
+          <div className={`c100 ${val.skillClass}`}>
+            <span>{val.skillPercent}%</span>
+            <div className="slice">
+              <div className="bar"></div>
+              <div className="fill"></div>
+            </div>
+          </div>
+          <h6 className="text-uppercase open-sans-font text-center mt-2 mt-sm-4">
+            {val.skillName}
+          </h6>
+        </div>
+      ))}
+    </>
+  );
+};
+
+export default Skills;
