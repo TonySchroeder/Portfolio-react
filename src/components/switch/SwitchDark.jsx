@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import lightImage from "../../assets/img/sun.png";
 
-const SwitchDark = () => {
-  const [isDark, setIsDark] = useState(false);
-
+const SwitchDark = ({ isDark, setIsDark }) => {
   const handleLabelClick = () => {
     if (isDark) {
       localStorage.setItem("theme-color", "dark");

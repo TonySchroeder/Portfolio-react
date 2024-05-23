@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import heroImg from "../../assets/img/hero/Tony.jpg";
-import heroImgMobile from "../../assets/img/hero/Tony_mobile.jpg";
+import heroImgDark from "../../assets/img/hero/TonyDark.jpg";
+import heroImgLight from "../../assets/img/hero/TonyLight.jpg";
+import heroImgDarkMobile from "../../assets/img/hero/TonyDark_mobile.jpg";
+import heroImgLightMobile from "../../assets/img/hero/TonyLight_mobile.jpg";
 import cancelImg from "../../assets/img/cancel.svg";
 import Index from "../../components/about/index";
 
 const heroContent = {
-  heroImage: heroImg,
-  heroMobileImage: heroImgMobile,
+  heroImageDark: heroImgDark,
+  heroImageLight: heroImgLight,
+  heroMobileImageDark: heroImgDarkMobile,
+  heroMobileImageLight: heroImgLightMobile,
   heroTitleName: "viktor grünwald",
   heroDesignation: "software entwickler",
   heroDescriptions:
@@ -15,7 +19,7 @@ const heroContent = {
   heroBtn: "mehr über mich",
 };
 
-const Hero = () => {
+const Hero = ({ isDark }) => {
   const [isOpen, setIsOpen] = useState(false);
   function toggleModalOne() {
     setIsOpen(!isOpen);
@@ -27,14 +31,14 @@ const Hero = () => {
         <div
           className="col-lg-4 bg position-fixed d-none d-lg-block"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + heroContent.heroImage
+            backgroundImage: `url(${process.env.PUBLIC_URL + (isDark ? heroContent.heroImageLight : heroContent.heroImageDark)
               })`,
           }}
         ></div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
           <div>
             <img
-              src={heroContent.heroMobileImage}
+              src={isDark ? heroContent.heroMobileImageLight : heroContent.heroMobileImageDark}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
             />

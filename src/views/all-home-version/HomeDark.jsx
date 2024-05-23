@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Hero from "../../components/hero/Hero";
 import Index from "../../components/about/index";
@@ -12,15 +12,15 @@ const menuItem = [
   { icon: "fa-user", menuName: "Ich" },
   { icon: "fa-briefcase", menuName: "Portfolio" },
   { icon: "fa-envelope-open", menuName: "Kontakt" },
-  // { icon: "fa-comments", menuName: "Blog" },
 ];
 
 const HomeDark = () => {
+  const [isDark, setIsDark] = useState(false);
   document.querySelector("body").classList.remove("rtl");
 
   return (
     <div className="yellow">
-      <SwitchDark />
+      <SwitchDark isDark={isDark} setIsDark={setIsDark} />
 
       <Tabs>
         <div className="header">
@@ -42,7 +42,7 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <div className="color-block d-none d-lg-block"></div>
-              <Hero />
+              <Hero isDark={isDark} />
             </div>
           </TabPanel>
 
