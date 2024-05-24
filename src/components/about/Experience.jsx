@@ -2,28 +2,28 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "   2024 - heute",
-    position: " Geschäftsführer / Software-Enwickler",
+    year: "05.2024 - Present",
+    position: "Software Developer",
     compnayName: "twylo B.V.",
-    details: ` Entwicklung moderner, sicherer und effizienter Digitallösungen mit Hilfe von Künstlicher Inteligenz und Cloud-Telefonie`,
+    details: `Development of modern, secure and efficient digital solutions with the help of artificial intelligence and cloud telephony`,
   },
   {
-    year: "2023 - 2024",
-    position: " Full-Stack Entwickler",
+    year: "12.2023 - 04.2024",
+    position: "React Developer",
     compnayName: "Weser Ems Eisenbahn",
-    details: `Entwicklung und Design einer Dispositions / CRM Software für Eisenbahnunternehmen`,
+    details: `Development and design of a scheduling / CRM software for railroad companies`,
   },
   {
-    year: "2018 - 2023",
-    position: "Vertriebsinnendienst",
-    compnayName: "Berding Beton",
-    details: `Kundenbetreuung und -Support sowie Auftragsabwicklung`,
+    year: "08.2023 - 11.2023",
+    position: "React Developer",
+    compnayName: "progwise.net",
+    details: `Co-development and design of ki supported software and time tracking tool `,
   },
   {
-    year: "2012 - 2017",
-    position: "Vertriebleiter",
-    compnayName: "Schmelter LED Technology",
-    details: `Kundenberatung und Koordination des Außendienstes sowie Auftragsabwicklung`,
+    year: "12.2022 - 07.2023",
+    position: "React Developer",
+    compnayName: "Kittelberger media solutions",
+    details: `Development of various React projects, revision and update of a component library to adapt it to the needs of our development team.`,
   },
 ];
 

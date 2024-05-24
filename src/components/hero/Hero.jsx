@@ -29,13 +29,13 @@ const Hero = ({ isDark }) => {
     <>
       <div className="row home-details-container align-items-center">
         <div
-          className="col-lg-4 bg position-fixed d-none d-lg-block"
+          className="col-lg-4 bg position-fixed d-none d-lg-block hero-img"
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL + (isDark ? heroContent.heroImageLight : heroContent.heroImageDark)
               })`,
           }}
         ></div>
-        <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
+        <div className="col-12 col-lg-8 offset-lg-4 home-details text-center text-lg-start">
           <div>
             <img
               src={isDark ? heroContent.heroMobileImageLight : heroContent.heroMobileImageDark}
@@ -43,7 +43,7 @@ const Hero = ({ isDark }) => {
               alt="hero man"
             />
             <h1 className="text-uppercase poppins-font">
-              Ich bin {heroContent.heroTitleName}.
+              Ich bin <b className="aqua-shadow">{heroContent.heroTitleName}</b>.
               <span>{heroContent.heroDesignation}</span>
             </h1>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
@@ -73,7 +73,7 @@ const Hero = ({ isDark }) => {
             <div data-aos="fade-up" data-aos-duration="1200">
               <div className="title-section text-left text-sm-center">
                 <h1>
-                  About <span>me</span>
+                  About <span className="aqua-shadow">me</span>
                 </h1>
                 <span className="title-bg">Résumé</span>
               </div>

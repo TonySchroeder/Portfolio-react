@@ -138,6 +138,26 @@ body.home.light .bg {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
+.aqua-shadow {
+  text-shadow: 5px 5px 0px rgba(0, 255, 255, 0.9);
+}
+
+.hero-img {
+  border: 3px solid aqua;
+  animation: flip-diagonal 2s ease-out forwards;
+}
+
+@keyframes flip-diagonal {
+  0% {
+    transform: rotate3d(1, 1, 0, 120deg);
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 0, -0deg);
+  }
+}
+
+
 body.light .preloader .black_wall {
   background-color: #eee;
 }
@@ -672,8 +692,21 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   height: 200%;
   width: 100%;
   transform: rotate(-15deg);
-  left: -83%;
+  // left: -83%;
   top: -50%;
+  left: -183%;
+  // border: 3px solid aqua;
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    left: -183%;
+  }
+
+  100% {
+    left: -83%;
+  }
 }
 
 .home .bg {
@@ -784,6 +817,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   font-size: 33px;
   font-weight: 300;
   top: 2px;
+  color: aqua;
 }
 
 .about .box-stats p {

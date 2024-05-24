@@ -1,14 +1,16 @@
 import React from "react";
+import { calculateYears } from "../../utilities/calculateYears";
+
 
 const personalInfoContent = [
-  { meta: "Vorname", metaInfo: "Viktor" },
-  { meta: "Nachname", metaInfo: "Grünwald" },
-  { meta: "Alter", metaInfo: "42 Jahre" },
-  { meta: "Nationalität", metaInfo: "Deutsch" },
-  { meta: "Adresse", metaInfo: "Meschede" },
-  { meta: "Telefon", metaInfo: "+49171 9796 775" },
-  { meta: "Email", metaInfo: "mail@viktor-gruenwald.de" },
-  { meta: "Sprachen", metaInfo: "Deutsch, Englisch, Russisch" },
+  { meta: "First name", metaInfo: "Tony" },
+  { meta: "Last name", metaInfo: "Schroeder" },
+  { meta: "Age", metaInfo: `${calculateYears("1987-04-22")} years` },
+  { meta: "Address", metaInfo: "Horneburg" },
+  { meta: "Phone", metaInfo: "+49 173 6471 810" },
+  { meta: "Nationality", metaInfo: "German" },
+  { meta: "Email", metaInfo: "tony.schroeder@gmx.de" },
+  { meta: "Languages", metaInfo: "German, English" },
 ];
 
 const PersonalInfo = () => {

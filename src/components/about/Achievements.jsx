@@ -1,11 +1,12 @@
 import React from "react";
+import { calculateYears } from "../../utilities/calculateYears";
 
 const achievementsContent = [
   { title: "23", subTitle1: "Jahre", subTitle2: "Erfahrung in Kommunikation" },
   {
-    title: "10",
-    subTitle1: "Software",
-    subTitle2: "Projekte in 2 Jahren",
+    title: `${calculateYears("2022-03-01") * 5}`,
+    subTitle1: "Projects",
+    subTitle2: `in ${calculateYears("2022-03-01")} years`,
   },
   { title: "300", subTitle1: "glückliche", subTitle2: "Kunden in 6 Branchen" },
 
