@@ -92,7 +92,7 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <div className="row justify-content-center">
-                <div className="col-12 text-center">
+                <div className="col-12 text-center mWidth764">
                   <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
                     Write to me!
                   </h3>

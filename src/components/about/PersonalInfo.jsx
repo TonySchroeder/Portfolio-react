@@ -1,5 +1,5 @@
 import React from "react";
-import { calculateYears } from "../../utilities/calculateYears";
+import { calculateYears } from "../../utils/calculateYears";
 
 
 const personalInfoContent = [

@@ -1,5 +1,5 @@
 import React from "react";
-import { calculateYears } from "../../utilities/calculateYears";
+import { calculateYears } from "../../utils/calculateYears";
 
 const achievementsContent = [
   { title: "23", subTitle1: "Jahre", subTitle2: "Erfahrung in Kommunikation" },
