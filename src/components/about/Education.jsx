@@ -2,16 +2,16 @@ import React from "react";
 
 const educationContent = [
   {
-    year: "2023",
-    degree: "Frontend - Developer",
+    year: "03.2022 - 09.2022",
+    degree: "Frontend Developer",
     institute: "Developer Akademie München",
-    details: ` Weiterbildung zum Frontend - Entwickler mit Schwerpunkt auf JavaScript und Angular`,
+    details: `Weiterbildung zum Frontend Entwickler mit Schwerpunkt auf JavaScript und Angular`,
   },
   {
-    year: "2004",
-    degree: "Bankkaufmann",
-    institute: "Spar- und Darlehenskasse",
-    details: `Ausbildung zum Bankkaufmann`,
+    year: "08.2004 - 01.2008",
+    degree: "Vehicle painter`",
+    institute: "Lackiercenter Schwerin",
+    details: `Training to become a vehicle painter`,
   },
 ];
 

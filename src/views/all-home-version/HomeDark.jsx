@@ -50,9 +50,10 @@ const HomeDark = () => {
             <div data-aos="fade-up" data-aos-duration="1200">
               <div className="title-section text-left text-sm-center">
                 <h1>
-                  About <span>me</span>
+                  About <span className="aqua-shadow">me</span>
                 </h1>
                 <span className="title-bg">Résumé</span>
+
               </div>
 
               <Index />
@@ -66,7 +67,7 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <h1>
-                My <span>portfolio</span>
+                My <span className="aqua-shadow">portfolio</span>
               </h1>
               <span className="title-bg">Projects</span>
             </div>
@@ -81,7 +82,7 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <h1>
-                Get in <span>contact</span>
+                Get in <span className="aqua-shadow">contact</span>
               </h1>
               <span className="title-bg">Contact</span>
             </div>
