@@ -6,6 +6,7 @@ import Address from "../../components/Address";
 import Portfolio from "../../components/portfolio/Portfolio";
 import Social from "../../components/Social";
 import SwitchDark from "../../components/switch/SwitchDark";
+import Contact from "../../components/Contact";
 
 const menuItem = [
   { icon: "fa-home", menuName: "Start" },
@@ -82,7 +83,7 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <h1>
-                Get in <span className="aqua-shadow">contact</span>
+                Get in <span className="aqua-shadow">touch</span>
               </h1>
               <span className="title-bg">Contact</span>
             </div>
@@ -124,6 +125,41 @@ const HomeDark = () => {
               </div>
             </div>
           </TabPanel>
+
+          {/* <TabPanel className="contact">
+            <div
+              className="title-section text-left text-sm-center"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <h1>
+                get in <span className="aqua-shadow">touch</span>
+              </h1>
+              <span className="title-bg">contact</span>
+            </div>
+            <div
+              className="container"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="row">
+                Left Side Starts
+                <div className="col-12 col-lg-4">
+                  <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
+                    Write to me!
+                  </h3>
+                  <p className="open-sans-font mb-4">
+                    I look forward to hearing from you! Whether you have any questions, would like to discuss a collaboration or just want to say hello, please don't hesitate to contact me. You can reach me using the information below. I will get back to you as soon as possible.
+                  </p>
+                  <Address />
+                  <Social />
+                </div>
+                <div className="col-12 col-lg-8">
+                  <Contact />
+                </div>
+              </div>
+            </div>
+          </TabPanel > */}
           {/* <TabPanel className="blog">
             <div
               className="title-section text-left text-sm-center "
@@ -145,10 +181,12 @@ const HomeDark = () => {
               </div>
             </div>
           </TabPanel> */}
-        </div>
-      </Tabs>
-    </div>
+        </div >
+      </Tabs >
+    </div >
   );
 };
 
 export default HomeDark;
+
+

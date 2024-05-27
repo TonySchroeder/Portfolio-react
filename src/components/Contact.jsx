@@ -123,7 +123,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="user_email"
-                placeholder="IHRE EMAIL"
+                placeholder="YOUR EMAIL ADDRESS"
                 required
               />
             </div>
@@ -135,7 +135,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="subject"
-                placeholder="IHR ANLIEGEN"
+                placeholder="YOUR SUBJECT"
                 required
               />
             </div>
@@ -146,7 +146,7 @@ const Contact = () => {
             <div className="form-group">
               <textarea
                 name="message"
-                placeholder="IHRE NACHRICHT"
+                placeholder="YOUR MESSAGE"
                 required
               ></textarea>
             </div>
@@ -155,7 +155,7 @@ const Contact = () => {
 
           <div className="col-12">
             <button type="submit" className="button">
-              <span className="button-text">Nachricht senden</span>
+              <span className="button-text">Send message</span>
               <span className="button-icon fa fa-send"></span>
             </button>
           </div>

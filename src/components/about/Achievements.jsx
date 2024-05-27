@@ -1,16 +1,18 @@
 import React from "react";
 import { calculateYears } from "../../utils/calculateYears";
 
-const achievementsContent = [
-  { title: "23", subTitle1: "Jahre", subTitle2: "Erfahrung in Kommunikation" },
-  {
-    title: `${calculateYears("2022-03-01") * 5}`,
-    subTitle1: "Projects",
-    subTitle2: `in ${calculateYears("2022-03-01")} years`,
-  },
-  { title: "300", subTitle1: "glückliche", subTitle2: "Kunden in 6 Branchen" },
+const yearsSinceBeginning = calculateYears("2022-03-01")
 
-  // { title: "53", subTitle1: "awards", subTitle2: "won" },
+const achievementsContent = [
+  {
+    title: `${yearsSinceBeginning * 6}`,
+    subTitle1: "Projects",
+    subTitle2: `in ${yearsSinceBeginning} years`,
+  },
+  { title: `${yearsSinceBeginning * 1000}`, subTitle1: "hours", subTitle2: "of front-end development" },
+  { title: "50", subTitle1: "custom", subTitle2: "React components" },
+  { title: "\u221e", subTitle1: "willingness", subTitle2: "to learn" },
+
 ];
 
 const Achievements = () => {

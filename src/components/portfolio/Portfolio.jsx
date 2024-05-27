@@ -14,7 +14,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="portfolio-main">
+      <div className="portfolio-main" >
         <Tabs>
           <TabList className="portfolio-tab-list" data-aos="fade-up">
             <Tab>ALLE</Tab>
