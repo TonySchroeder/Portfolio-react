@@ -1230,9 +1230,8 @@ body.light .contact .custom-span-contact a {
 }
 
 .contact {
-  min-height: 100vh;
-
   .container {
+    min-height: calc(100vh - 227.19px);
     padding-bottom: 60px;
   }
 
